@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="img/shortcut-icon.png" type="image/x-icon">
+    <title>ALED</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="#"><img src="img/logo-border.png" alt="logo" class="logo"></a>
+            <nav id="menu">
+                <ul>
+                    <li><a href="#">Каталог</a>
+                        <ul>
+			                <li><a href="#">Светодиодные ленты</a></li>
+			                <li><a href="#">Светодиодные лампочки</a></li>
+			                <li><a href="#">Светодиодные бра</a></li>
+                            <li><a href="#">Люстры</a></li>
+			            </ul>
+                    </li>
+                    <li><a href="#">Компания</a>
+                        <ul>
+			                <li><a href="#">О нас</a></li>
+			                <li><a href="#">Сотрудники</a></li>
+			                <li><a href="#">Новости</a></li>
+                            <li><a href="#">Сертификаты</a></li>
+                            <li><a href="#">Документы</a></li>
+			            </ul>
+                    </li>
+                    <li><a href="#">Услуги</a>
+                        <ul>
+			                <li><a href="#">Монтаж</a></li>
+			                <li><a href="#">Проектирование</a></li>
+			                <li><a href="#">Поставка оборудования</a></li>
+			            </ul>
+                    </li>
+                    <li><a href="#">Проекты</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Помощь</a>
+                        
+                    </li>
+                    <li><a href="#">Производители</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="header-btns">
+                <a href="#"><img src="img/search-interface-symbol.png" alt="search"></a>
+                <a href="#"><img src="img/free-icon-enter-1286923.png" alt="enter"></a>
+                <div class="menu-btn" onclick="menuOpen()"><img src="img/menu.png"></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="slider-container">
+            <div class="swiper mySwiper">
+                <div class="swiper-btns">
+                    <img src="img/slider-arrow-left.png" alt="prev" class="swiper-btn prev">
+                    <img src="img/slider-arrow-right.png" alt="next" class="swiper-btn next">
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="service-container">
+                            <div class="service-title">Монтажные услуги</div>
+                            <div class="service-description">С 2019 года наша компания дополнила свой портфель услугами монтажа. Введение данной услуги в портфель компании позволило завершить полный цикл оказания услуг по реконструкции освещения предприятий полного цикла – от проекта до окончательной реализации, монтажа. На данном направлении работают настоящие специалисты, имеющие опыт работы более 20 лет. </div>    
+                            <a href="#"><div class="service-btn">Подробнее</div></a>
+                        </div>
+                        <img src="img/slider-item-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-container">
+                            <div class="service-title">Проектирование</div>
+                            <div class="service-description">Наша компания выполнит проект освещения любого типа и сложности здания. <br>
+                                За время нашей работы мы выполнили более 70 проектов освещения - от швейного цеха до ледового катка, от автомойки до нефтеналивного терминала, от больницы до детского сада. </div>    
+                            <a href="#"><div class="service-btn">Подробнее</div></a>
+                        </div>
+                        <img src="img/slider-item-2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="service-container">
+                            <div class="service-title">Поставка оборудования</div>
+                            <div class="service-description">Наша команда очень ответственно относиться к выполнению поставки продукции нашим клиентам. <br>
+                                Мы практикуем поставку продукции напрямую к клиенту – от склада заказчика до объекта на котором требуется оборудование. </div>    
+                            <a href="#"><div class="service-btn">Подробнее</div></a>
+                        </div>
+                        <img src="img/slider-item-3.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <h2>Приемущества</h2>
+            <div class="advantages-container">
+                <div class="advantage">
+                    <img src="img/free-icon-security-6652187.png" alt="security">
+                    <p>Гарантия качества</p>
+                    <span>Предоставим оперативную замену на весь период гарантии</span>
+                </div>
+                <div class="advantage">
+                    <img src="img/free-icon-delivery-truck-6652157.png" alt="delivery">
+                    <p>Надёжные поставщики</p>
+                    <span>Каждая партия товаров прошла проверку качества</span>
+                </div>
+                <div class="advantage">
+                    <img src="img/free-icon-setting-6652178.png" alt="setting">
+                    <p>Монтаж</p>
+                    <span>Оказываем услуги монтажа качественным персоналом и с гарантией</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="orange-wrapper">
+            <div class="main-container">
+                <h2>Популярные категории</h2>
+                <div class="category-cards">
+                    <a href="#">
+                        <div class="category-card">
+                            <img src="img/led_strip_2.png" alt="led-strip">
+                            <p>Светодиодные ленты</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="category-card">
+                            <img src="img/lamp.png" alt="lamp">
+                            <p>Светодиодные лампочки</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="category-card">
+                            <img src="img/bra.png" alt="bra">
+                            <p>Светодиодные бра</p>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="category-card">
+                            <img src="img/chandelier.png" alt="chandelier">
+                            <p>Люстры</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <h2>Наша команда</h2>
+            <div class="team-container">
+                <div class="team-card">
+                    <img src="img/director.jpg" alt="director">
+                    <h3>Шестаков Борис</h3>
+                    <p>Руководитель<br>shestakovboris@aled.ru</p>
+                </div>
+                <div class="team-card">
+                    <img src="img/manager.jpg" alt="manager">
+                    <h3>Поляков Максим</h3>
+                    <p>Менеджер<br>maksimpolyakov@aled.ru</p>
+                </div>
+                <div class="team-card">
+                    <img src="img/crm-manager.jpg" alt="crm-manager">
+                    <h3>Васильева Анна</h3>
+                    <p>CRM-Менеджер<br>vasilievnaann@aled.ru</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-us-container">
+            <div class="about-us-text">
+                <h3>ALED — интернет-магазин светодиодного освещения.</h3>
+                <p>Компания "АЛЭД" - оказывает услуги от проектирования до монтажа с поставкой качественного светодиодного освещения. <br><br>
+                    Компания присутствует на рынках Архангельской области и Санкт-Петербурга.<br><br>
+                    Мы динамично развиваемся и выполняем проекты по всей стране.<br><br>
+                    Мы на рынке с 2016 года. За данный период выполнено более 100 проектов различного назанчения и масштаба.
+                </p>
+                <a href="#">Подробнее <img src="img/right.png"></a>
+            </div>
+            <img src="img/crop-colleagues-with-papers-and-tablet2.png" class="about-us-img">
+        </div>
+
+        <div class="sertificats-container">
+
+            <h2>Сертификаты</h2>
+
+            <div class="swiper mySwiper">
+                <div class="swiper-btns">
+                    <img src="img/slider-arrow-left.png" alt="prev" class="swiper-btn prev">
+                    <img src="img/slider-arrow-right.png" alt="next" class="swiper-btn next">
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="img/sertificat-1.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/sertificat-2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/sertificat-3.jpg" />
+                    </div>
+                </div>
+            </div>
+            <a href="#">Смотреть все <img src="img/right.png"></a>
+        </div>
+
+        <div class="feedback-container">
+            <div class="feedback">
+                <h2>Обратная связь</h2>
+                <form action="index.html">
+                    <input type="text" placeholder="Имя">
+                    <input type="email"placeholder="E-mail">
+                    <textarea cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+                    <input type="submit" value="Написать">
+                </form>
+            </div>
+            <img src="img/feedback-bg-2.png" class="feedback-img">
+        </div>
+
+        <div class="review-container">
+            <h2>Отзывы</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-btns">
+                    <img src="img/slider-arrow-left.png" alt="prev" class="swiper-btn prev">
+                    <img src="img/slider-arrow-right.png" alt="next" class="swiper-btn next">
+                </div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <h3>ООО “Brighten Up”</h3>
+                            <p>“Мы уже несколько лет сотрудничаем с компанией "ALED" и каждый раз остаемся довольными результатом. Установка светодиодных ламп проходит быстро и качественно, а экономия на электричестве заметна сразу. <br><br> 
+                                Нам очень нравится, что компания "ALED" предлагает широкий выбор светодиодных ламп различной мощности и цветовой температуры, что позволяет подобрать оптимальный вариант для любого помещения.<br><br>
+                                Мы рекомендуем компанию "ALED" всем, кто хочет сэкономить на электричестве и получить яркое и комфортное освещение.”</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <h3>ЗАО “Glowing Solutions”</h3>
+                            <p>“Мы заказывали установку светодиодного освещения в нашем офисе у компании "ALED" и остались очень довольными. Сотрудники компании профессионально подобрали лампы, установили их быстро и качественно.<br><br>
+                                Теперь наши рабочие места ярко освещены, что повысило эффективность работы сотрудников. Мы также заметили значительную экономию на электричестве, что очень важно для нашей компании. <br><br>
+                                Мы рекомендуем компанию "ALED" как надежного и профессионального партнера.”</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="review-card">
+                            <h3>ОАО “Luminous”</h3>
+                            <p>“Мы выбрали компанию "ALED" для установки светодиодных ламп в нашем спортивном зале и не пожалели. Освещение стало ярче и комфортнее для наших клиентов, что повысило эффективность тренировок.<br><br> 
+                                Компания "ALED" предложила нам оптимальный вариант светодиодных ламп, установка прошла быстро и качественно.<br><br>
+                                Мы рекомендуем компанию "ALED" как надежного и профессионального поставщика светодиодного освещения.”</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-container">
+            <h2>Новости</h2>
+            <div class="news-container">
+                <a href="#">
+                    <div class="news-card">
+                        <img src="img/news-img-1.png">
+                        <span>24.05.2023</span>
+                        <h3>Расширяем сферу деятельности</h3>
+                        <p>Теперь наша компания может осуществлять доставку товаров по всей России</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="news-card">
+                        <img src="img/news-img-2.jpg">
+                        <span>12.04.2023</span>
+                        <h3>Поступление новых светильников</h3>
+                        <p>Первая партия светильников от Diora уже доступна для заказа</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-item">
+                <a href="#">
+                    <p>О нас</p>
+                </a>
+                <a href="#">
+                    <p>Сотрудникис</p>
+                </a>
+                <a href="#">
+                    <p>Обратная связь</p>
+                </a>
+                <a href="#">
+                    <p>Сертификаты</p>
+                </a>
+                <a href="#">
+                    <p>Отзывы</p>
+                </a>
+                <a href="#">
+                    <p>Новости</p>
+                </a>
+            </div>
+            <div class="footer-item">
+                <a href="#">
+                    <p>Форма обратной связи</p>
+                </a>
+                <a href="#">
+                    <p>Вконтакте</p>
+                </a>
+                <a href="#">
+                    <p>Телеграм</p>
+                </a>
+                <a href="#">
+                    <p>aled@gmail.com</p>
+                </a>
+                <a href="#">
+                    <p>+7 (981) 180-22-55</p>
+                </a>
+                <a href="#">
+                    <p>Россия 163062 Архангельск Ул. Папанина 21</p>
+                </a>
+            </div>
+            <div class="footer-item">
+                <a href="#">
+                    <p>Войти</p>
+                </a>
+                <a href="#">
+                    <p>Зарегистрироваться</p>
+                </a>
+                <a href="#">
+                    <p>Личный кабинет</p>
+                </a>
+                <p>Aled © все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script>
+        function menuOpen() {
+            if (document.getElementById("menu").style.display == 'block') {
+                document.getElementById("menu").style.display = 'none';
+            } else {
+                document.getElementById("menu").style = 'display: block;';
+            }
+            
+        }
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            grabCursor: true,
+            centeredSlides: true,
+            autoplay: {
+                delay: 6000,
+                disableOnInteraction: true,        
+            },
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+        });
+    </script>
+</body>
+</html>
