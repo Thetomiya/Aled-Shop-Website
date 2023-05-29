@@ -7,6 +7,7 @@ body {
 a {
     text-decoration: none;
     color: #000000;
+    
 }
 
 h2 {
@@ -23,6 +24,11 @@ h3 {
 p {
     font-size: 24px;
     margin-top: 0;
+}
+
+img {
+    user-select: none;
+    object-fit: cover;
 }
 
 
@@ -118,33 +124,29 @@ nav ul ul li:last-child {
     height: 1035px;
     width: 100%;
     float: none;
-    object-fit: cover;
-}
-
-.swiper-btns {
-    display: flex;
-    justify-content: space-between;
-    margin: 0 60px;
-    float: none;
-    position: relative;
-    top: 600px;
-    z-index: 2;
-
-    
 }
 
 .swiper-btn {
+    position: absolute;
     transition: .2s;
     padding: 5px 5px;
+    width: 35px;
+    z-index: 2;
+}
+
+.next {
+    margin-top: 500px;
+    margin-left: 95%;
+}
+
+.prev {
+    margin-top: 500px;
+    margin-left: 3%;
 }
 
 .swiper-btn:hover {
     cursor: pointer;
     transform: scale(.9);
-}
-
-.swiper-btns img {
-    width: 35px;
 }
 
 
@@ -162,7 +164,6 @@ nav ul ul li:last-child {
 
 .service-title {
     font-size: 64px;
-
 }
 
 .service-description {
@@ -276,8 +277,18 @@ nav ul ul li:last-child {
 }
 
 .team-card p {
-    opacity: 0.75;
+    color: rgba(0, 0, 0, 0.75);
     line-height: 38px;
+
+}
+
+.team-card p a {
+    opacity: 0.75;
+    transition: .2s;
+}
+
+.team-card p a:hover {
+    opacity: 1;
 }
 
 
@@ -321,6 +332,10 @@ nav ul ul li:last-child {
     margin: 150px 0;
 }
 
+.sertificats-container h2 {
+    margin-bottom: 100px;
+}
+
 .sertificats-container .swiper-slide img {
     margin: 0 auto;
     display: block;
@@ -328,10 +343,21 @@ nav ul ul li:last-child {
     max-width: 1000px;
     height: auto;
     border: 1px solid black;
+    user-select: none;
 }
 
-.sertificats-container .swiper-btns {
-    top: 350px;
+.sertificats-container .next {
+    display: block;
+    position: absolute;
+    margin: 250px 0 0 95%;
+
+}
+
+.sertificats-container .prev {
+    display: block;
+    position: absolute;
+    margin: 250px 0 0 3%;
+    
 }
 
 .sertificats-container a img {
@@ -359,7 +385,7 @@ nav ul ul li:last-child {
 
 .feedback {
     margin: 0px 20px 40px 140px;
-    width: 90%;
+    max-width: 90%;
 }
 
 .feedback h2 {
@@ -398,9 +424,11 @@ nav ul ul li:last-child {
 
 .feedback form input, textarea {
     margin-bottom: 50px;
-    padding: 0 15px;
+    padding: 5px 15px;
     font-size: 20px;
+    font-family: 'Roboto', sans-serif;
     background: #F3F3F5;
+    border-radius: 5px;
 }
 
 .feedback form textarea {
@@ -411,6 +439,7 @@ nav ul ul li:last-child {
 .feedback-img {
     width: 49vw;
     height: auto;
+    pointer-events: none; 
 }
 
 .feedback p {
@@ -446,8 +475,12 @@ nav ul ul li:last-child {
     width: 950px;
 }
 
-.review-container .swiper-btns {
-    top: 300px;
+.review-container .prev {
+    margin: 230px 0 0 3%;
+}
+
+.review-container .next {
+    margin: 230px 0 0 95%;
 }
 
 
@@ -482,6 +515,7 @@ nav ul ul li:last-child {
     height: 320px;
     width: 100%;
     border-radius: 12px 12px 0px 0px;
+    margin-bottom: 34px;
 }
 
 .news-card span {
@@ -490,7 +524,7 @@ nav ul ul li:last-child {
 }
 
 .news-card h3 {
-    margin: 55px 0;
+    margin: 41px 0;
 }
 
 .news-card p {
@@ -513,6 +547,45 @@ nav ul ul li:last-child {
 }
 
 
+.footer-item a {
+    transition: .2s;
+}
+
+.footer-item a:hover {
+    opacity: 0.75;
+}
+
+@media screen and (max-width:1875px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn img {
+        height: 20px;
+        cursor: pointer;
+    }
+
+    header nav {
+        display: none;
+        width: 100vw;
+    }
+
+    .header-container {
+        margin: 0 1%;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .header-btns {
+        padding: 20px 0;
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
+    }
+
+}
 
 /* под маленькие экраны */
 
@@ -544,28 +617,10 @@ nav ul ul li:last-child {
         height: 100px;
     }
 
-    .header-container {
-        margin: 0 1%;
-        flex-direction: column;
-        height: auto;
-    }
+
     
     header nav a {
         font-size: 15px;
-    }
-
-    .menu-btn {
-        display: block;
-    }
-
-    .menu-btn img {
-        height: 20px;
-        cursor: pointer;
-    }
-
-    header nav {
-        display: none;
-        width: 100vw;
     }
 
     header nav ul {
@@ -578,7 +633,6 @@ nav ul ul li:last-child {
 
     header nav ul li a {
         padding: 10px;
-        
     }
 
     nav ul ul li {
@@ -587,28 +641,22 @@ nav ul ul li:last-child {
         
     }
 
-    .header-btns {
-        width: 100%;
-        display: flex;
-        justify-content: space-around;
-    }
-
     .header-btns img {
         margin: 0;
         height: 25px;
     }
 
-    .swiper-btns {
-        margin: 0;
-        top: 60vh;
-    }
-
-    .swiper-btns img {
+    .swiper-btn {
+        margin-top: 300px;
         width: 20px;
+    }
+    
+    .next {
+        margin-left: 90%;
     }
 
     .swiper-slide img {
-        width: auto;
+        width: 100%;
         height: 90vh;
     }
 
@@ -689,8 +737,13 @@ nav ul ul li:last-child {
         width: 70%;
     }
 
-    .sertificats-container .swiper-btns {
-        top: 110px;
+    .sertificats-container .prev {
+        margin-top: 70px;
+    }
+
+    .sertificats-container .next {
+        margin-top: 70px;
+        margin-left: 90%;
     }
 
     .feedback h2 {
@@ -721,6 +774,13 @@ nav ul ul li:last-child {
         margin-bottom: 50px;
     }
 
+    .review-container .next {
+        margin-left: 91%;
+    }
+    .review-container .prev {
+        margin-left: 1%;
+    }
+
     .review-card {
         padding: 10px 0;
     }
@@ -734,16 +794,26 @@ nav ul ul li:last-child {
     }
 
     .news-card {
-        width: 95%;
-        min-height: 100%;
+        justify-content: center;
     }
 
     .news-card img {
         height: auto;
     }
 
+    .news-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
     .news-container a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         margin: 70px 0px 0px 20px;
+        max-width: 80%;
     }
 
     .footer-container {
