@@ -613,9 +613,91 @@ nav ul ul li:last-child {
 
 }
 
+
+@media screen and (max-width:1315px) {
+    
+    .header-container {
+        margin: 0 10px;
+        justify-content: space-between;
+        max-width: 1020px;
+    }
+
+    .header-btns {
+        max-width: 30px;
+        display: flex;
+        margin-right: 40px;
+    }
+
+    .header-btns img {
+        margin: 0 5px;
+    }
+
+    nav ul li {
+        margin: 0 5px;
+        display: inline-block;
+    }
+
+    .logo {
+        width: 130px;
+        height: auto;
+    }
+
+    nav a {
+        font-size: 18px;
+    }
+
+    .service-title {
+        font-size: 40px;
+    }
+
+    .service-description {
+        font-size: 25px;
+        max-width: 400px;
+    }
+
+    .advantage {
+        width: 370px;
+    }
+
+    .advantage img {
+        height: 120px;
+    }
+
+    .advantage-span {
+        font-size: 20px;
+    }
+
+
+    .main-container {
+        margin: 0 100px;
+    }
+
+    .category-card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .category-card p {
+        font-size: 20px;
+    }
+
+    .category-card img {
+        scale: 0.8;
+    }
+
+    .review-card p {
+        font-size: 18px;
+        width: 600px;
+    }
+
+    .footer-container {
+        padding: 40px 0;
+    }
+}
+
 /* под маленькие экраны */
 
-@media screen and (max-width:1260px) {
+@media screen and (max-width:1000px) {
     body {
         
         font-size: 20px;
@@ -640,9 +722,8 @@ nav ul ul li:last-child {
     }
 
     .logo {
-        height: 100px;
+        width: 200px;
     }
-
     
     .menu-btn {
         display: block;
@@ -665,9 +746,11 @@ nav ul ul li:last-child {
         height: auto;
     }
 
+
     .header-btns {
         padding: 20px 0;
-        width: 80vw;
+        margin: 0;
+        min-width: 80vw;
         display: flex;
         justify-content: space-around;
     }
