@@ -121,7 +121,7 @@ nav ul ul li:last-child {
 
 .swiper-slide img {
     display: block;
-    height: 1035px;
+    height: 840px;
     width: 100%;
     float: none;
 }
@@ -135,12 +135,12 @@ nav ul ul li:last-child {
 }
 
 .next {
-    margin-top: 500px;
+    margin-top: 400px;
     margin-left: 95%;
 }
 
 .prev {
-    margin-top: 500px;
+    margin-top: 400px;
     margin-left: 3%;
 }
 
@@ -154,8 +154,8 @@ nav ul ul li:last-child {
 
 .service-container {
     position: absolute;
-    left: 50%;
-    top: 40%;
+    left: 45%;
+    top: 20%;
     width: 740px;
     display: flex;
     flex-direction: column;
@@ -195,20 +195,26 @@ nav ul ul li:last-child {
 .advantages-container {
     margin: 150px 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .advantage {
     width: 465px;
+    margin-bottom: 20px;
+    display: flex;
 }
 
 .advantage img {
-    height: 141px;
-    float: left;
+    height: 161px;
     margin-right: 20px;
 }
 
-.advantage span {
+.advantage-span {
+    width: 300px;
+}
+
+.advantage-span span {
     opacity: 0.75;
 }
 
@@ -555,34 +561,54 @@ nav ul ul li:last-child {
     opacity: 0.75;
 }
 
-@media screen and (max-width:1875px) {
-
-    .menu-btn {
-        display: block;
-    }
-
-    .menu-btn img {
-        height: 20px;
-        cursor: pointer;
-    }
-
-    header nav {
-        display: none;
-        width: 100vw;
-    }
+@media screen and (max-width:1865px) {
 
     .header-container {
-        margin: 0 1%;
-        flex-direction: column;
-        text-align: center;
+        margin: 0 100px;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+        display: inline-block;
+    }
+
+    .logo {
+        width: 200px;
         height: auto;
     }
 
-    .header-btns {
-        padding: 20px 0;
-        width: 80vw;
-        display: flex;
-        justify-content: space-around;
+    nav a {
+        font-size: 20px;
+    }
+
+    .advantage {
+        width: 370px;
+    }
+
+    .advantage img {
+        height: 120px;
+    }
+
+    .advantage-span {
+        font-size: 20px;
+    }
+
+
+    .main-container {
+        margin: 0 100px;
+    }
+
+    .category-card {
+        width: 250px;
+        height: 350px;
+    }
+
+    .category-card p {
+        font-size: 20px;
+    }
+
+    .category-card img {
+        scale: 0.8;
     }
 
 }
@@ -615,6 +641,35 @@ nav ul ul li:last-child {
 
     .logo {
         height: 100px;
+    }
+
+    
+    .menu-btn {
+        display: block;
+    }
+
+    .menu-btn img {
+        height: 20px;
+        cursor: pointer;
+    }
+
+    header nav {
+        display: none;
+        width: 100vw;
+    }
+
+    .header-container {
+        margin: 0 1%;
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+    }
+
+    .header-btns {
+        padding: 20px 0;
+        width: 80vw;
+        display: flex;
+        justify-content: space-around;
     }
 
 
