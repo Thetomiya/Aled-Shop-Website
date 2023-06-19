@@ -118,14 +118,12 @@ nav ul ul li:last-child {
 .slider-container {
     margin-bottom: 150px;
 }
-
 .swiper-slide img {
     display: block;
     height: 840px;
     width: 100%;
     float: none;
 }
-
 .swiper-btn {
     position: absolute;
     transition: .2s;
@@ -133,17 +131,14 @@ nav ul ul li:last-child {
     width: 35px;
     z-index: 2;
 }
-
 .next {
     margin-top: 400px;
     margin-left: 95%;
 }
-
 .prev {
     margin-top: 400px;
     margin-left: 3%;
 }
-
 .swiper-btn:hover {
     cursor: pointer;
     transform: scale(.9);
